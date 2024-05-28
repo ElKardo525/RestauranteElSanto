@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/900/914/non_2x/blurred-restaurant-scene-with-empty-tabletop-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+.container-hero {
+    background-color: rgb(68, 63, 63);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-block: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: fixed;
+    width: 90%;
+}
+
+/*----------------------------
+MENU AYUDA
+----------------------------*/
+.soportes li {
+    display: inline-block;
+    padding: 0px 20px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.soportes a {
+    color: #ffffff;
+}
+
+.container-soporte li a {
+    text-decoration: none;
+}
+
+.soportes a:hover {
+    color: rgb(241, 96, 0);
+}
+.navbar {
+    display: flex;
+    margin-right: 7rem;
+}
+
+/*----------------------------
+LOGO
+------------------------------*/
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container-logo i {
+    font-size: 2.3rem;
+    color: #fff;
+}
+
+.container-logo h1 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.logo{
+    color: #fff;
+}
+
+/*------------------------------
+CONTENEDOR
+-----------------------------*/
+.main-nosotros {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px 20px; 
+    margin-top: 120px; 
+    flex: 1; 
+}
+
+.container-nosotros {
+    max-width: 750px; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.titulo {
+    font-size: 3rem; 
+    color: #444; 
+    margin-bottom: 10px; 
+}
+
+.vdos span {
+    display: block;
+    width: 50px; 
+    height: 5px; 
+    background-color: rgb(241, 96, 0); 
+    margin: 0 auto 20px auto; 
+}
+
+.fuente {
+    font-size: 1.6rem; 
+    color: #666; 
+    line-height: 1.6; 
+}
+
+/*---------------------------
+FOOTER
+---------------------------*/
+.footer {
+    background-color: rgb(68, 63, 63); 
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+.container-footer {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.redes p {
+    font-size: 1.8rem;
+    margin-bottom: 10px; 
+}
+
+.redes span {
+    margin: 0 10px; 
+    font-size: 2rem; 
+}
+
+.redes span i {
+    color: #fff; 
+}
+
+.redes span i:hover {
+    color: rgb(241, 96, 0); 
+}
+
+/*----------------------------
+MEDIA QUERIES-Tableta (768px)
+-----------------------------*/
+@media(max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .ocultar {
+        display: none;
+    }
+
+    /*------------------------*/
+    .container-hero {
+        background-color: rgb(68, 63, 63);
+        position: relative;
+        z-index: 5;
+    }
+
+    .btn-cerrar {
+        font-size: 3rem;
+        color: #fff;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        user-select: none;
+    }
+
+    .btn-cerrar:hover {
+        cursor: pointer;
+    }
+
+    .menu-hamburgesa span {
+        background-color: #fff;
+        display: block;
+        width: 4.8rem;
+        height: 0.4rem;
+        margin-bottom: 0.7rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+
+    .soportes li {
+        display: block;
+        margin-top: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .container-navbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem 3rem;
+        background-color: rgb(68, 63, 63);
+        width: 40rem;
+    }
+
+    .pantalla-completa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 4;
+    }
+    .main-content {
+        margin: 0 auto;
+        width: 95%;
+    }
+    .container-hero {
+        position: fixed;
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+/*----------------------------
+MEDIA QUERIES-Celular(468px)
+-----------------------------*/
+@media(max-width: 468px) {
+    html {
+        font-size: 42.5%;
+    }
+    .content-banner {
+        max-width: 50rem;
+        padding: 22rem 0;
+    }
+    .main-content {
+        margin: 0 auto;
+        width: 95%;
+    }
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.7rem;
+    }
+}
